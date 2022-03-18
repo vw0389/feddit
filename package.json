@@ -4,7 +4,10 @@
   "description": "reddit clone",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install": "cd frontend && npm i && cd .. && pipenv sync",
+    "develop": "concurrently \"cd frontend && npm start\" \"pipenv run python backend/manage.py runserver\"",
+    "build": "cd client && npm run build"
   },
   "repository": {
     "type": "git",
