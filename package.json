@@ -1,0 +1,22 @@
+{
+  "name": "feddit",
+  "version": "1.0.0",
+  "description": "reddit clone",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vw0389/feddit.git"
+  },
+  "author": "Victor Weinert & TJ James",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vw0389/feddit/issues"
+  },
+  "homepage": "https://github.com/vw0389/feddit#readme",
+  "dependencies": {
+    "concurrently": "^7.0.0"
+  }
+}

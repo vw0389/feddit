@@ -1,0 +1,25 @@
+.vote-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50px;
+    margin: 10px 5px;
+}
+
+.vote {
+    width: 20px;
+}
+
+.upvote:hover {
+    fill: green;
+}
+
+.downvote:hover {
+    fill: red;
+}
+
+.vote-count {
+    user-select: none;
+    font-weight: bold;
+    font-size: small;
+}

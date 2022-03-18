@@ -1,0 +1,31 @@
+nav {
+    background-color: white;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.f-logo {
+    width: 20px;
+    margin: 5px 20px;
+    fill: green;
+}
+
+.search-bar {
+    padding: 5px 10px;
+    border: 0px solid white;
+    background-color: lightgray;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-bar:hover,
+.search-bar:focus {
+    border: 1px solid green;
+}
+
+.options {
+    display: flex;
+    flex-wrap: nowrap;
+}

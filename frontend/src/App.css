@@ -1,0 +1,25 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: lightgray;
+}
+
+button {
+    margin: 0 5px;
+    outline: none;
+    padding: 7px 16px;
+    border: none;
+    border-radius: 15px;
+    background-color: green;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+button:hover {
+    color: green;
+    background-color: white;
+    outline: green solid 2px;
+}
