@@ -2,10 +2,10 @@ import React from "react";
 
 import "./post.css";
 
-import VoteBlock from "./VoteBlock";
+import VoteBlock from "../VoteBlock";
 
 function Post(post) {
-    const { subfeddit, poster, createdAt, title, body, votes } = post.post;
+    const { subfeddit, member, createdAt, title, body, votes } = post.post;
 
     function openPost() {
         console.log("post clicked");
@@ -17,11 +17,11 @@ function Post(post) {
             <div className="content">
                 <div className="post-topline">
                     <div className="post-info">
-                        <a href="" className="subfeddit">
+                        <a href={`f/${subfeddit}`} className="subfeddit">
                             f/{subfeddit}
                         </a>
                         <span className="poster">
-                            Posted by <a href="">m/{poster}</a>
+                            Posted by <a href={`m/${member}`}>m/{member}</a>
                         </span>
                         <p className="postedAt">on {createdAt}</p>
                     </div>
