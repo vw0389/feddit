@@ -8,6 +8,7 @@ export default [
   //   body: '',
   // },
   {
+    id: 1,
     subfeddit: 'jimmyjohnsfans',
     poster: 'TheSpicyItalian',
     createdAt: '02-02-2022',
@@ -16,6 +17,7 @@ export default [
     votes: 2,
   },
   {
+    id: 2,
     subfeddit: 'gregorian',
     poster: 'confused',
     createdAt: '01-22-2021',

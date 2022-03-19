@@ -1,18 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import './post.css';
 
 import VoteBlock from '../VoteBlock';
 
 function Post(post) {
-  const { subfeddit, member, createdAt, title, body, votes } = post.post;
-
-  function openPost() {
-    console.log('post clicked');
-  }
+  const { subfeddit, member, createdAt, title, body, votes, id } = post.post;
 
   return (
-    <article onClick={openPost}>
+    <article>
       <VoteBlock votes={votes} />
       <div className='content'>
         <div className='post-topline'>
@@ -27,8 +24,13 @@ function Post(post) {
           </div>
           <button>Join</button>
         </div>
-        <h4 className='title'>{title}</h4>
-        <h5 className='body'>{body}</h5>
+        <Link
+          to={`/f/${subfeddit}/p/${id}`}
+          style={{ textDecoration: 'none', width: '100%' }}
+        >
+          <h4 className='title'>{title}</h4>
+          <h5 className='body'>{body}</h5>
+        </Link>
       </div>
     </article>
   );

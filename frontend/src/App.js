@@ -15,9 +15,9 @@ function App() {
       <Router>
         <Routes>
           <Route exact path='' element={<Homepage />} />
-          <Route exact path='/f/:id' element={<Subfeddit />} />
-          <Route exact path='/m/:id' element={<Member />} />
-          <Route exact path='/f/:id/p/:id' element={<PostView />} />
+          <Route exact path='/f/:subfeddit' element={<Subfeddit />} />
+          <Route exact path='/m/:member' element={<Member />} />
+          <Route exact path='/f/:subfeddit/p/:id' element={<PostView />} />
         </Routes>
       </Router>
     </div>

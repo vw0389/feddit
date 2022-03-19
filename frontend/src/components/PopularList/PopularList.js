@@ -6,8 +6,8 @@ function PopularList() {
   const [testData, setTestData] = useState(data);
   return (
     <div className='pop-list'>
-      {testData.map((post, index) => (
-        <Post key={index} post={post} />
+      {testData.map(post => (
+        <Post key={post.id} post={post} />
       ))}
     </div>
   );
